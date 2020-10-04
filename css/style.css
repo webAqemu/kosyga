@@ -805,7 +805,8 @@ body {
     height: 28px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #BBFF74; }
+    border-bottom: 1px solid #BBFF74;
+    outline: none; }
     .footer__input::placeholder {
       font-family: 'Roboto Slab', serif;
       font-weight: 300;
@@ -820,7 +821,9 @@ body {
     border: none;
     position: absolute;
     top: 44px;
-    right: 0; }
+    right: 0;
+    cursor: pointer;
+    outline: none; }
   .footer__wrapper {
     display: flex; }
   .footer__social {

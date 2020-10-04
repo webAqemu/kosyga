@@ -1018,6 +1018,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #BBFF74;
+    outline: none;
     &::placeholder {
       @include r3;
       font-size: 16px;
@@ -1035,6 +1036,8 @@
     position: absolute;
     top: 44px;
     right: 0;
+    cursor: pointer;
+    outline: none;
   }
 
   &__wrapper {
