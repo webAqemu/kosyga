@@ -1,0 +1,30 @@
+$violent: #8309D1;
+$green: #B6FD77;
+$red: #F97B4D;
+$blue: #1A3DAF;
+$text: #4B4B4B;
+
+@mixin b7 {
+  font-family: 'Bellota Text', cursive;
+  font-weight: 700;
+}
+
+@mixin b4 {
+  font-family: 'Bellota Text', cursive;
+  font-weight: 400;
+}
+
+@mixin r5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+
+@mixin r4 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+@mixin r3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}

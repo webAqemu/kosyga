@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>kosygin-rgu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="#">
+            <img class="header__img" src="img/logo.svg" alt="logo">
+            <img class="header__img" src="img/logo-text.svg" alt="logo">
+          </a>
+
+          <div class="header__info">
+            <a class="header__icon" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6569 2.34313C12.1458 0.832156 10.1369 0 8 0C5.86312 0 3.85416 0.832156 2.34313 2.34313C0.832156 3.85413 0 5.86312 0 8C0 10.1369 0.832156 12.1459 2.34313 13.6569C3.85416 15.1678 5.86312 16 8 16C10.1369 16 12.1458 15.1678 13.6569 13.6569C15.1678 12.1459 16 10.1369 16 8C16 5.86312 15.1678 3.85413 13.6569 2.34313ZM6.48278 1.10213C6.21444 1.36316 5.92441 1.67422 5.63422 2.03628C5.13241 2.66244 4.71456 3.33638 4.38775 4.04509H2.1515C3.15034 2.57275 4.69009 1.49612 6.48278 1.10213ZM4.01606 4.98259H1.61547C1.24447 5.76444 1.01316 6.62472 0.953438 7.53125H3.54241C3.58391 6.65237 3.74284 5.79872 4.01606 4.98259ZM0.953438 8.46875H3.54241C3.58391 9.34762 3.74281 10.2013 4.01606 11.0174H1.61547C1.24447 10.2356 1.01316 9.37528 0.953438 8.46875ZM4.38775 11.9549H2.1515C3.15034 13.4272 4.69009 14.5039 6.48278 14.8979C6.21441 14.6368 5.92438 14.3258 5.63422 13.9637C5.13241 13.3376 4.71456 12.6636 4.38775 11.9549ZM7.53125 14.5877C7.19741 14.2998 6.78231 13.8972 6.36578 13.3774C6.0015 12.9229 5.68953 12.4482 5.42963 11.9549H7.53125V14.5877ZM5.00681 11.0174H7.53125V8.46875H4.48109C4.52659 9.35919 4.70209 10.2104 5.00681 11.0174ZM7.53125 7.53125H4.48109C4.52663 6.64094 4.70234 5.78978 5.00719 4.98259H7.53125V7.53125ZM5.42963 4.04509H7.53125V1.41363C7.19022 1.70763 6.76531 2.11991 6.34347 2.6505C5.98881 3.09663 5.68419 3.56191 5.42963 4.04509ZM15.0466 7.53125H12.4576C12.4161 6.65237 12.2572 5.79872 11.9839 4.98259H14.3845C14.7555 5.76444 14.9869 6.62472 15.0466 7.53125ZM11.6122 4.04509H13.8485C12.8497 2.57275 11.3099 1.49612 9.51722 1.10213C9.78559 1.36316 10.0756 1.67422 10.3658 2.03628C10.8676 2.66244 11.2854 3.33641 11.6122 4.04509ZM8.46875 1.41231C8.80259 1.70016 9.21769 2.10281 9.63422 2.62256C9.9985 3.07713 10.3105 3.55178 10.5704 4.04509H8.46875V1.41231ZM10.9932 4.98259H8.46875V7.53125H11.5189C11.4734 6.64081 11.2979 5.78962 10.9932 4.98259ZM8.46875 8.46875H11.5189C11.4733 9.35906 11.2976 10.2102 10.9928 11.0174H8.46875V8.46875ZM8.46875 11.9549V14.5863C8.80981 14.2923 9.23469 13.8801 9.65653 13.3495C10.0112 12.9034 10.3158 12.4381 10.5704 11.9549H8.46875ZM9.51725 14.8979C9.78559 14.6368 10.0756 14.3258 10.3658 13.9637C10.8676 13.3376 11.2855 12.6636 11.6123 11.9549H13.8485C12.8497 13.4272 11.3099 14.5039 9.51725 14.8979ZM11.9839 11.0174H14.3845C14.7555 10.2356 14.9869 9.37528 15.0466 8.46875H12.4576C12.4161 9.34762 12.2572 10.2013 11.9839 11.0174Z" fill="#AEAEAE" />
+              </svg>
+            </a>
+            <a class="header__icon" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 3.86206C11.3602 3.86206 14.439 5.92967 15.8933 7.7014C16.0356 7.87492 16.0356 8.12484 15.8933 8.29839C14.5022 9.9932 11.4365 12.1377 8.00002 12.1377C4.68149 12.1377 1.59547 10.1129 0.106776 8.29836C-0.0355922 8.12484 -0.0355922 7.87492 0.106776 7.7014C1.54882 5.94372 4.62775 3.86206 8.00002 3.86206ZM7.99998 11.1966C9.76265 11.1966 11.1967 9.76252 11.1967 7.99988C11.1967 6.23743 9.76281 4.80324 7.99998 4.80321C6.23732 4.80321 4.80331 6.23724 4.80331 7.99988C4.80331 9.76242 6.23729 11.1966 7.99998 11.1966ZM1.10627 8.00001C1.63594 7.44951 2.91305 6.26146 4.70584 5.49895C3.58075 6.97729 3.58031 9.02124 4.7053 10.5001C3.3422 9.92239 2.07594 9.00964 1.10627 8.00001ZM11.2947 5.49964C12.4197 6.97852 12.4193 9.02244 11.2942 10.5008C13.087 9.73826 14.3641 8.55028 14.8938 7.99972C13.9241 6.99015 12.6578 6.07737 11.2947 5.49964Z" fill="#AEAEAE" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 9.5999C7.11777 9.5999 6.40002 8.88216 6.40002 7.9999C6.40002 7.11764 7.11777 6.3999 8.00002 6.3999C8.88225 6.3999 9.60002 7.11764 9.60002 7.9999C9.60002 8.88216 8.88225 9.5999 8.00002 9.5999ZM8.00002 8.65873C8.36329 8.65873 8.65885 8.3632 8.65885 7.9999C8.65885 7.63661 8.36329 7.34108 8.00002 7.34108C7.63673 7.34108 7.3412 7.63661 7.3412 7.9999C7.3412 8.3632 7.63673 8.65873 8.00002 8.65873Z" fill="#AEAEAE" />
+                <path d="M8.00001 2.03922C8.2599 2.03922 8.4706 1.82852 8.4706 1.56863V0.470588C8.4706 0.210698 8.2599 0 8.00001 0C7.74012 0 7.52942 0.210698 7.52942 0.470588V1.56863C7.52942 1.82852 7.74012 2.03922 8.00001 2.03922Z" fill="#AEAEAE" />
+                <path d="M10.8078 2.66867C11.0335 2.79736 11.3209 2.71889 11.4497 2.49301L12.076 1.39497C12.2048 1.16922 12.1262 0.881843 11.9004 0.753059C11.6746 0.624306 11.3872 0.702894 11.2585 0.928714L10.6322 2.02675C10.5035 2.25248 10.5821 2.53988 10.8078 2.66867Z" fill="#AEAEAE" />
+                <path d="M4.55027 2.49301C4.67902 2.71876 4.9664 2.79738 5.19219 2.66863C5.41794 2.53988 5.49656 2.25247 5.36781 2.02672L4.74155 0.928677C4.6128 0.70292 4.32536 0.6243 4.09964 0.753053C3.87388 0.881806 3.79526 1.16921 3.92401 1.39497L4.55027 2.49301Z" fill="#AEAEAE" />
+                <path d="M8.00001 13.9607C7.74012 13.9607 7.52942 14.1714 7.52942 14.4313V15.5293C7.52942 15.7892 7.74012 15.9999 8.00001 15.9999C8.2599 15.9999 8.4706 15.7892 8.4706 15.5293V14.4313C8.4706 14.1714 8.2599 13.9607 8.00001 13.9607Z" fill="#AEAEAE" />
+                <path d="M5.19219 13.3314C4.96643 13.2027 4.67906 13.2813 4.55027 13.507L3.92401 14.6051C3.79526 14.8308 3.87388 15.1182 4.09964 15.247C4.32542 15.3757 4.6128 15.2971 4.74155 15.0714L5.36781 13.9733C5.49659 13.7476 5.41794 13.4602 5.19219 13.3314Z" fill="#AEAEAE" />
+                <path d="M11.4497 13.507C11.321 13.2813 11.0335 13.2027 10.8078 13.3314C10.5821 13.4601 10.5035 13.7476 10.6322 13.9733L11.2585 15.0713C11.3872 15.2971 11.6746 15.3758 11.9004 15.247C12.1261 15.1182 12.2048 14.8308 12.076 14.6051L11.4497 13.507Z" fill="#AEAEAE" />
+              </svg>
+            </a>
+            <a class="header__icon" href="#">
+              <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.04077 3.80133C3.04077 5.89724 4.74595 7.60228 6.84186 7.60228C8.93776 7.60228 10.6429 5.89724 10.6429 3.80133C10.6429 1.70542 8.93776 0.000244141 6.84186 0.000244141C4.74595 0.000244141 3.04077 1.70542 3.04077 3.80133ZM4.18108 3.80133C4.18108 2.33404 5.37471 1.14056 6.84186 1.14056C8.30901 1.14056 9.50263 2.33404 9.50263 3.80133C9.50263 5.26848 8.30901 6.46196 6.84186 6.46196C5.37471 6.46196 4.18108 5.26848 4.18108 3.80133Z" fill="#AEAEAE" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.570156 15.9647H13.1136C13.4283 15.9647 13.6837 15.7092 13.6837 15.3945V12.7337C13.6837 10.7428 12.0638 9.1228 10.0728 9.1228H3.61094C1.61999 9.1228 0 10.7428 0 12.7337V15.3945C0 15.7092 0.255429 15.9647 0.570156 15.9647ZM12.5434 14.8244H1.14031V12.7337C1.14031 11.3716 2.24875 10.2631 3.61094 10.2631H10.0728C11.435 10.2631 12.5434 11.3716 12.5434 12.7337V14.8244Z" fill="#AEAEAE" />
+                <path d="M17.6748 7.79241H11.2131C10.8984 7.79241 10.6429 7.53698 10.6429 7.22226C10.6429 6.90753 10.8984 6.6521 11.2131 6.6521H17.6748C17.9895 6.6521 18.245 6.90753 18.245 7.22226C18.245 7.53698 17.9895 7.79241 17.6748 7.79241Z" fill="#AEAEAE" />
+                <path d="M14.634 10.8331C14.488 10.8331 14.3421 10.7776 14.2311 10.666C14.0083 10.4431 14.0083 10.082 14.2311 9.85931L16.869 7.22136L14.2311 4.58342C14.0083 4.3607 14.0083 3.99962 14.2311 3.7769C14.4538 3.55418 14.8149 3.55418 15.0377 3.7769L18.0785 6.81769C18.3012 7.0404 18.3012 7.40162 18.0785 7.62434L15.0377 10.6651C14.9259 10.7776 14.7799 10.8331 14.634 10.8331Z" fill="#AEAEAE" />
+              </svg>
+            </a>
+            <form class="header__form">
+              <input class="header__input" type="text" placeholder="Поиск по сайту" required>
+              <button class="header__btn" type="submit"></button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__wrapper">
+            <ul class="header__menu">
+              <li class="header__item" id="header__item">
+                <a href="#" class="header__link">Абитуриентам</a>
+                <div class="header__hover" id="header__hover">
+                  <ul class="header__list">
+                    <li class="header__list-item"><a href="#" class="header__list-link">Дни открытых дверей</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Приемная комиссия</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Подать заявление о приеме</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Подготовительные курсы</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Календарь абитуриента</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Правила приема ВО</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Правила приема СПО</a></li>
+                  </ul>
+                  <ul class="header__list">
+                    <li class="header__list-item"><a href="#" class="header__list-link">Вступительные испытания</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Стоимость обучения</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Необходимые документы</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Количество мест для приема</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Информация о конкурсе и проходном балле</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Средние баллы зачисленных</a></li>
+                  </ul>
+                  <ul class="header__list">
+                    <li class="header__list-item"><a href="#" class="header__list-link">Вакантные места для перевода</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Целевой прием</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Льготы и особые права</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link header__list-link--blue">Поданные заявления</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link header__list-link--blue">Приказы о зачислении 2020</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Ответы на вопросы</a></li>
+                  </ul>
+                  <div class="header__priem">
+                    <div class="header__text">Контакты Приемной комиссии</div>
+                    <div class="header__contacts">
+                      <a class="header__mail" href="mailto:priem@rguk.ru">priem@rguk.ru</a>
+                      <a class="header__phone" href="tel:8(495)9513148">8 (495) 951 31 48</a>
+                      <a class="header__phone" href="tel:8(495)8110101">8 (495) 811 01 01</a>
+                      <a href="#" class="header__vk">
+                        <svg class="header__vk-icon" width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.7646 12.9452H12.0792C12.0792 12.9452 12.4766 12.8997 12.6787 12.6732C12.8658 12.4653 12.8589 12.0751 12.8589 12.0751C12.8589 12.0751 12.8327 10.248 13.6523 9.97882C14.4595 9.71394 15.4963 11.7447 16.595 12.5265C17.4256 13.1175 18.0568 12.988 18.0568 12.988L20.9953 12.9452C20.9953 12.9452 22.5327 12.847 21.8039 11.5952C21.7448 11.4926 21.379 10.6695 19.6189 8.97768C17.7762 7.20609 18.0238 7.49376 20.2432 4.43051C21.5949 2.56493 22.1353 1.42565 21.9662 0.938606C21.8053 0.474348 20.8111 0.596821 20.8111 0.596821L17.5053 0.616758C17.5053 0.616758 17.2606 0.582579 17.0777 0.695084C16.9003 0.806164 16.7862 1.0625 16.7862 1.0625C16.7862 1.0625 16.2623 2.50655 15.5637 3.73412C14.091 6.32457 13.501 6.46128 13.2604 6.30036C12.7007 5.92582 12.841 4.79366 12.841 3.99046C12.841 1.47977 13.2082 0.433048 12.1246 0.162469C11.7643 0.07275 11.5003 0.0129376 10.5803 0.00296885C9.4005 -0.00984809 8.4008 0.00724116 7.83563 0.293486C7.45885 0.484316 7.16871 0.910124 7.3461 0.934333C7.56474 0.96424 8.05977 1.07247 8.32242 1.44274C8.66207 1.91981 8.64969 2.99359 8.64969 2.99359C8.64969 2.99359 8.84496 5.94861 8.19453 6.31603C7.74763 6.56809 7.13571 6.05399 5.82248 3.70279C5.15006 2.49942 4.64127 1.16789 4.64127 1.16789C4.64127 1.16789 4.54364 0.920092 4.369 0.787651C4.15724 0.626727 3.86022 0.575459 3.86022 0.575459L0.716735 0.595396C0.716735 0.595396 0.245075 0.609637 0.0718122 0.821829C-0.0821991 1.01123 0.0594363 1.40144 0.0594363 1.40144C0.0594363 1.40144 2.52087 7.36417 5.30682 10.3705C7.86313 13.1261 10.7646 12.9452 10.7646 12.9452Z" fill="white" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item"><a href="#" class="header__link">Студентам</a></li>
+              <li class="header__item"><a href="#" class="header__link">Учеба</a></li>
+              <li class="header__item header__item--blue"><a href="#" class="header__link">Университет</a></li>
+              <li class="header__item header__item--blue"><a href="#" class="header__link">Новости</a></li>
+              <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+            </ul>
+            <a href="#" class="header__enter">Поступить!</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="slider" id="slider">
+    <div class="container">
+      <div class="slider__number"></div>
+      <div class="slider__inner">
+        <div class="slider__slide">
+          <div class="slider__item">
+            <div class="slider_info">
+              <div class="slider__title">Начало работы приемной комиссии!</div>
+              <div class="slider__text">
+                <p class="slider__paragraph">
+                  Прием документов в РГУ Косыгина начнется с 19 июня в дистанционном
+                  формате. Вам будет предложено создать личный кабинет и заполнить
+                  анкету на нашем портале. Ссылка на личный кабинет и подробная инструкция
+                  по работе с ним будет доступна в разделе Приемной комиссии.
+                </p>
+                <p class="slider__paragraph">
+                  Вступительные испытания для отдельной категории граждан, имеющих
+                  право сдавать испытания, проводимые РГУ самостоятельно, а также
+                  вступительные испытания творческой и/или профессиональной
+                  направленности будут проводиться в дистанционном формате.
+                </p>
+              </div>
+              <a href="#" class="slider__btn btn">Приемная комиссия</a>
+            </div>
+            <img class="slider__img" src="img/slider-img.jpg">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__item">
+            <div class="slider_info">
+              <div class="slider__title">Начало работы приемной комиссии!</div>
+              <div class="slider__text">
+                <p class="slider__paragraph">
+                  Прием документов в РГУ Косыгина начнется с 19 июня в дистанционном
+                  формате. Вам будет предложено создать личный кабинет и заполнить
+                  анкету на нашем портале. Ссылка на личный кабинет и подробная инструкция
+                  по работе с ним будет доступна в разделе Приемной комиссии.
+                </p>
+                <p class="slider__paragraph">
+                  Вступительные испытания для отдельной категории граждан, имеющих
+                  право сдавать испытания, проводимые РГУ самостоятельно, а также
+                  вступительные испытания творческой и/или профессиональной
+                  направленности будут проводиться в дистанционном формате.
+                </p>
+              </div>
+              <a href="#" class="slider__btn btn">Приемная комиссия</a>
+            </div>
+            <img class="slider__img" src="img/slider-img.jpg">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__item">
+            <div class="slider_info">
+              <div class="slider__title">Начало работы приемной комиссии!</div>
+              <div class="slider__text">
+                <p class="slider__paragraph">
+                  Прием документов в РГУ Косыгина начнется с 19 июня в дистанционном
+                  формате. Вам будет предложено создать личный кабинет и заполнить
+                  анкету на нашем портале. Ссылка на личный кабинет и подробная инструкция
+                  по работе с ним будет доступна в разделе Приемной комиссии.
+                </p>
+                <p class="slider__paragraph">
+                  Вступительные испытания для отдельной категории граждан, имеющих
+                  право сдавать испытания, проводимые РГУ самостоятельно, а также
+                  вступительные испытания творческой и/или профессиональной
+                  направленности будут проводиться в дистанционном формате.
+                </p>
+              </div>
+              <a href="#" class="slider__btn btn">Приемная комиссия</a>
+            </div>
+            <img class="slider__img" src="img/slider-img.jpg">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__item">
+            <div class="slider_info">
+              <div class="slider__title">Начало работы приемной комиссии!</div>
+              <div class="slider__text">
+                <p class="slider__paragraph">
+                  Прием документов в РГУ Косыгина начнется с 19 июня в дистанционном
+                  формате. Вам будет предложено создать личный кабинет и заполнить
+                  анкету на нашем портале. Ссылка на личный кабинет и подробная инструкция
+                  по работе с ним будет доступна в разделе Приемной комиссии.
+                </p>
+                <p class="slider__paragraph">
+                  Вступительные испытания для отдельной категории граждан, имеющих
+                  право сдавать испытания, проводимые РГУ самостоятельно, а также
+                  вступительные испытания творческой и/или профессиональной
+                  направленности будут проводиться в дистанционном формате.
+                </p>
+              </div>
+              <a href="#" class="slider__btn btn">Приемная комиссия</a>
+            </div>
+            <img class="slider__img" src="img/slider-img.jpg">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__item">
+            <div class="slider_info">
+              <div class="slider__title">Начало работы приемной комиссии!</div>
+              <div class="slider__text">
+                <p class="slider__paragraph">
+                  Прием документов в РГУ Косыгина начнется с 19 июня в дистанционном
+                  формате. Вам будет предложено создать личный кабинет и заполнить
+                  анкету на нашем портале. Ссылка на личный кабинет и подробная инструкция
+                  по работе с ним будет доступна в разделе Приемной комиссии.
+                </p>
+                <p class="slider__paragraph">
+                  Вступительные испытания для отдельной категории граждан, имеющих
+                  право сдавать испытания, проводимые РГУ самостоятельно, а также
+                  вступительные испытания творческой и/или профессиональной
+                  направленности будут проводиться в дистанционном формате.
+                </p>
+              </div>
+              <a href="#" class="slider__btn btn">Приемная комиссия</a>
+            </div>
+            <img class="slider__img" src="img/slider-img.jpg">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__item">
+            <div class="slider_info">
+              <div class="slider__title">Начало работы приемной комиссии!</div>
+              <div class="slider__text">
+                <p class="slider__paragraph">
+                  Прием документов в РГУ Косыгина начнется с 19 июня в дистанционном
+                  формате. Вам будет предложено создать личный кабинет и заполнить
+                  анкету на нашем портале. Ссылка на личный кабинет и подробная инструкция
+                  по работе с ним будет доступна в разделе Приемной комиссии.
+                </p>
+                <p class="slider__paragraph">
+                  Вступительные испытания для отдельной категории граждан, имеющих
+                  право сдавать испытания, проводимые РГУ самостоятельно, а также
+                  вступительные испытания творческой и/или профессиональной
+                  направленности будут проводиться в дистанционном формате.
+                </p>
+              </div>
+              <a href="#" class="slider__btn btn">Приемная комиссия</a>
+            </div>
+            <img class="slider__img" src="img/slider-img.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats__inner">
+        <div class="stats__title">Вуз в самом сердце столицы</div>
+        <div class="stats__text">
+          РГУ им. А. Н. Косыгина находится в шаговой доступности от Красной площади
+          и в пяти минутах от Парка Горького. От общежитий легко добираться до любой площадки.
+        </div>
+        <ul class="stats__list">
+          <li class="stats__item stats__item--university">10 институтов</li>
+          <li class="stats__item stats__item--direction">48 направлений</li>
+          <li class="stats__item stats__item--hostel">5 общежитий</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="links">
+    <div class="container">
+      <div class="links__inner">
+        <a class="links__item btn" href="#">Документы</a>
+        <a class="links__item btn" href="#">Преподаватели</a>
+        <a class="links__item btn" href="#">Подробнее о вузе</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="directions">
+    <div class="container">
+      <div class="directions__inner">
+        <div class="directions__title">Направления подготовки</div>
+        <div class="directions__text">
+          РГУ им. А. Н. Косыгина производит набор на обучение в 2020/2021 году на бакалавриат и специалитет, магистратуру, аспирантуру
+          и ассистентуру-стажировку, а также на дополнительное образование,
+          в гимназию и колледж РГУ им. А. Н. Косыгина
+        </div>
+        <div class="directions__wrapper">
+          <select class="directions__select">
+            <option value="selected" class="directions__option">Бакалавриат и специалитет</option>
+            <option value="" class="directions__option">Магистратура</option>
+            <option value="" class="directions__option">Аспирантура</option>
+          </select>
+        </div>
+
+        <div class="directions__slider">
+
+          <div class="directions__slide">
+
+            <div class="directions__item">
+              <span class="directions__number">27.03.01</span>
+              <span class="directions__number">29.03.02</span>
+              <div class="directions__name">Текстильный институт</div>
+            </div>
+
+            <div class="directions__item">
+              <span class="directions__number">37.03.01</span>
+              <span class="directions__number">39.03.01</span>
+              <span class="directions__number">42.03.01</span>
+              <span class="directions__number">42.03.02</span>
+              <span class="directions__number">42.03.04</span>
+              <div class="directions__name">Институт социальной инженерии</div>
+            </div>
+
+          </div>
+
+          <div class="directions__slide">
+
+            <div class="directions__item">
+              <span class="directions__number">29.03.01</span>
+              <span class="directions__number">29.03.04</span>
+              <span class="directions__number">29.03.05</span>
+              <div class="directions__name">Технологический институт легкой промышленности</div>
+            </div>
+
+            <div class="directions__item directions__item--design">
+              <span class="directions__number">54.03.01</span>
+              <div class="directions__name">Институт дизайна</div>
+              <a class="directions__link" href="#">
+                <span class="directions__more">Подробнее</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="directions__slide">
+
+            <div class="directions__item">
+              <span class="directions__number">18.03.01</span>
+              <span class="directions__number">13.03.01</span>
+              <span class="directions__number">20.03.01</span>
+              <span class="directions__number">29.03.03</span>
+              <div class="directions__name">Институт химических технологий и промышленной экологии</div>
+            </div>
+            <div class="directions__item">
+              <span class="directions__number">50.03.02</span>
+              <span class="directions__number">54.03.02</span>
+              <span class="directions__number">54.03.03</span>
+              <span class="directions__number">54.03.04</span>
+              <div class="directions__name">Институт искусств</div>
+            </div>
+
+          </div>
+
+          <div class="directions__slide">
+
+            <div class="directions__item">
+              <div class="directions__name">Институт мехатроники и информационных технологий</div>
+            </div>
+            <div class="directions__item">
+              <div class="directions__name">Институт славянский культуры</div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__info">
+          <div class="about__title">Студенчество</div>
+          <div class="about__text">
+            <p class="about__paragraph">
+              Корпусы РГУ имени А. Н.  Косыгина оборудованы современными аудиториями, новейшим оборудованием,
+              а также инжиниринговым центром, где каждый студент имеет возможность
+              реализовать свои задумки и сделать коллаборацию со студентами других направлений.
+            </p>
+            <p class="about__paragraph">
+              Самое главное для нас — подготовить ведущих специалистов различных направлений,
+              которые будут знать что-то не только в теории, но и смогут
+              отлично справляться с любой производственной практикой.
+            </p>
+            <p class="about__paragraph">
+              Также у нас очень активная студенческая жизнь — студенты организовывают собственные
+              кружки и сообщества по интересам, где мнение каждого человека обязательно
+              учитывается, а любая задумка поддерживается деканатами и другими сотрудниками университета.
+            </p>
+          </div>
+          <div class="about__btn btn">Подробнее об учебной жизни</div>
+        </div>
+
+        <div class="about__gallery">
+          <div class="about__column">
+            <img src="img/about-1.png" class="about__img">
+            <img src="img/about-2.png" class="about__img">
+          </div>
+          <div class="about__column">
+            <img src="img/about-3.png" class="about__img">
+            <img src="img/about-4.png" class="about__img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clubs">
+    <div class="container">
+      <div class="clubs__inner">
+        <div class="clubs__title">Студенческие клубы <span class="clubs__number">19</span> </div>
+        <div class="clubs__slider">
+          <div class="clubs__slide">
+            <div class="clubs__item">
+              <div class="clubs__name">Студенческий <br> совет</div>
+              <a href="https://vk.com/myrsu" class="clubs__link">vk.com/myrsu</a>
+            </div>
+            <div class="clubs__item">
+              <div class="clubs__name">Киноклуб <br> «Попкорн»</div>
+              <a href="https://vk.com/kinoclubrsu" class="clubs__link">vk.com/kinoclubrsu</a>
+            </div>
+          </div>
+
+          <div class="clubs__slide">
+            <div class="clubs__item">
+              <div class="clubs__name">КВН <br> «Аргумент»</div>
+              <a href="https://vk.com/kvn.argument" class="clubs__link">vk.com/kvn.argument</a>
+            </div>
+            <div class="clubs__item">
+              <div class="clubs__name">Киберспортивный клуб «Fusion»</div>
+              <a href="https://vk.com/kosyginesports" class="clubs__link">vk.com/kosyginesports</a>
+            </div>
+          </div>
+
+          <div class="clubs__slide">
+            <div class="clubs__item clubs__item--it">
+              <div class="clubs__name">IT-клуб <br> «K-Studio»</div>
+              <a href="https://vk.com/kstudiorgu" class="clubs__link">vk.com/kstudiorgu</a>
+            </div>
+            <div class="clubs__item">
+              <div class="clubs__name">Клуб мюзикла <br> «Gleam»</div>
+              <a href="https://vk.com/clubgleam" class="clubs__link">vk.com/clubgleam</a>
+            </div>
+          </div>
+
+          <div class="clubs__slide">
+            <div class="clubs__item">
+              <div class="clubs__name">Международный культурный клуб</div>
+              <a href="https://vk.com/rsu_international_culturel" class="clubs__link">vk.com/rsu_international_culturel</a>
+            </div>
+            <div class="clubs__item">
+              <div class="clubs__name">Литературный <br> клуб «ЛитVoyage»</div>
+              <a href="https://vk.com/litvoyage" class="clubs__link">vk.com/litvoyagevk.com/litvoyagevv</a>
+            </div>
+          </div>
+
+          <div class="clubs__slide">
+            <div class="clubs__item">
+              <div class="clubs__name">Студенческий парламентский клуб</div>
+              <a href="https://vk.com/rsukosyginspc" class="clubs__link">vk.com/rsukosyginspc</a>
+            </div>
+            <div class="clubs__item">
+              <div class="clubs__name">Театр <br> «SKAT»</div>
+              <a href="https://vk.com/teatrskat" class="clubs__link">vk.com/teatrskat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="news__inner">
+        <div class="news__title">
+          Новости
+          <a href="#" class="news__link">Все новости</a>
+        </div>
+
+        <div class="news__slider">
+          <div class="news__slide">
+            <a class="news__item" href="#">
+              <div class="news__wrapper">
+                <span class="news__part news__part--contest">Конкурс</span>
+                <div class="news__date">25 мая 2020</div>
+                <div class="news__info">
+                  Всероссийский
+                  конкурс сочинений
+                  «Герои нашего времени»
+                </div>
+              </div>
+              <div class="news__btn">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4L0 8L2.28589 4L0 0L8 4Z" fill="#9C9C9C" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="news__slide">
+            <a class="news__item" href="#">
+              <div class="news__wrapper">
+                <span class="news__part news__part--new">Новость</span>
+                <div class="news__date">23 мая 2020</div>
+                <div class="news__info">
+                  Ученые РГУ им. А. Н. Косыгина изучают
+                  изолирующие свойства средств
+                  индивидуальной защиты органов дыхания
+                  с помощью моделирования
+                </div>
+              </div>
+              <div class="news__btn">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4L0 8L2.28589 4L0 0L8 4Z" fill="#9C9C9C" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="news__slide">
+            <a class="news__item" href="#">
+              <div class="news__wrapper">
+                <span class="news__part news__part--preview">Анонс</span>
+                <div class="news__date">20 мая 2020</div>
+                <div class="news__info">
+                  Круглый стол on-line «Святая Земля
+                  в славяно-русской традиции» 25 мая в 13-00
+                </div>
+              </div>
+              <div class="news__btn">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4L0 8L2.28589 4L0 0L8 4Z" fill="#9C9C9C" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="news__slide">
+            <a class="news__item" href="#">
+              <div class="news__wrapper">
+                <span class="news__part news__part--contest">Конкурс</span>
+                <div class="news__date">25 мая 2020</div>
+                <div class="news__info">
+                  Всероссийский
+                  конкурс сочинений
+                  «Герои нашего времени»
+                </div>
+              </div>
+              <div class="news__btn">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4L0 8L2.28589 4L0 0L8 4Z" fill="#9C9C9C" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__logo" href="#">
+            <img class="footer__img" src="img/logo.svg" alt="logo">
+          </a>
+
+          <p class="footer__paragraph">
+            Государственная аккредитация: №3223 от 07.08.2019 <br>
+            Лицензия: №2501 от 19.12.2016
+          </p>
+          <p class="footer__paragraph">
+            © ФГБОУ ВО РГУ им. А.Н. Косыгина, Москва <br>
+            Концепт сайта: Kobyteva 2020
+          </p>
+        </div>
+        <div class="footer__items">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Абитуриентам</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Студентам</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Учеба</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Университет</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Вопросы и ответы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+          <div class="footer__wrapper">
+            <form class="footer__form">
+              <div class="footer__title">Подпишитесь на рассылку</div>
+              <div class="footer__mail">
+                <input type="text" class="footer__input" placeholder="E-mail" required>
+                <button class="footer__btn" type="submit"></button>
+              </div>
+            </form>
+            <div class="footer__social">
+              <div class="footer__title">Следите за нами в соцсетях</div>
+              <ul class="footer__social-list">
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.97449C0 4.46571 4.46592 0 9.97449 0C15.4831 0 19.949 4.46571 19.949 9.97449C19.949 15.4833 15.4831 19.949 9.97449 19.949C4.46592 19.949 0 15.4833 0 9.97449ZM15.4088 11.4117C15.2832 11.2929 15.1577 11.174 15.0341 11.0533C14.6145 10.6439 14.5878 10.4065 14.9257 9.9351C15.1216 9.66034 15.3256 9.39132 15.5296 9.12226C15.7085 8.8863 15.8875 8.65032 16.061 8.41041C16.0733 8.39346 16.0855 8.37651 16.0978 8.35956C16.4324 7.89688 16.7685 7.43215 16.9445 6.87816C17.0604 6.51265 16.9578 6.35143 16.5831 6.28735C16.5182 6.27612 16.4516 6.27551 16.3861 6.27551L14.1629 6.27286C13.889 6.26878 13.738 6.38816 13.6408 6.63082C13.5102 6.95898 13.3757 7.28653 13.2198 7.60306C12.8665 8.32082 12.472 9.01429 11.9184 9.60184C11.9105 9.61014 11.9026 9.61858 11.8947 9.62709C11.7787 9.7511 11.6485 9.89037 11.4576 9.82735C11.2029 9.73449 11.1273 9.31408 11.1316 9.17225L11.1296 6.60653C11.0802 6.24 10.9986 6.07674 10.6347 6.00531L8.32592 6.00571C8.01755 6.00571 7.86327 6.1249 7.69857 6.31755C7.60367 6.42898 7.5751 6.50122 7.7702 6.53816C8.15327 6.61082 8.36939 6.85898 8.42653 7.24327C8.51837 7.85735 8.51204 8.47367 8.45898 9.0902C8.44347 9.2702 8.41265 9.4498 8.34122 9.61775C8.22959 9.88204 8.04918 9.93571 7.81245 9.77327C7.59796 9.62612 7.44735 9.41837 7.2998 9.21C6.74612 8.42755 6.30429 7.58388 5.94388 6.69714C5.83959 6.44102 5.66 6.28571 5.38857 6.28143C4.72163 6.27082 4.05469 6.26918 3.38776 6.28204C2.98633 6.28959 2.86673 6.48429 3.0302 6.84816C3.75653 8.46388 4.5649 10.0345 5.62041 11.4655C6.16245 12.1996 6.78449 12.848 7.58816 13.3073C8.49918 13.8282 9.47939 13.9849 10.5124 13.9365C10.9959 13.9139 11.1412 13.788 11.1635 13.3061C11.179 12.9765 11.2161 12.6484 11.3788 12.3522C11.5384 12.0612 11.7804 12.0057 12.059 12.1869C12.1986 12.2773 12.3157 12.3922 12.4269 12.5143C12.517 12.6127 12.606 12.7122 12.695 12.8116C12.875 13.0128 13.055 13.2139 13.2441 13.4063C13.5982 13.7671 14.0182 13.98 14.5459 13.9363L16.5894 13.9367C16.9184 13.9149 17.0894 13.5118 16.9 13.1443C16.7673 12.8865 16.5931 12.6573 16.4082 12.4357C16.1018 12.0679 15.7553 11.7398 15.4088 11.4117Z" fill="#BBFF74" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="001-facebook">
+                        <path id="Path" d="M11.5898 19.8323C11.5066 19.867 11.4232 19.8991 11.3394 19.9284C11.4232 19.8991 11.5066 19.867 11.5898 19.8323Z" fill="black" />
+                        <path id="Path_2" d="M11.7894 19.8111C11.7497 19.8298 11.7099 19.847 11.6702 19.8646C11.7099 19.847 11.7497 19.8298 11.7894 19.8111Z" fill="black" />
+                        <path id="Path_3" d="M11.1165 19.9042C11.0191 19.9324 10.9212 19.9574 10.823 19.9785C10.9212 19.9574 11.0191 19.9324 11.1165 19.9042Z" fill="black" />
+                        <path id="Path_4" d="M11.3082 19.8896C11.2614 19.9056 11.2144 19.9205 11.1675 19.9345C11.2144 19.9205 11.2614 19.9056 11.3082 19.8896Z" fill="black" />
+                        <path id="Path_5" d="M12.0611 19.7563C12.026 19.7754 11.9909 19.7946 11.9557 19.8129C11.9909 19.7946 12.026 19.7754 12.0611 19.7563Z" fill="black" />
+                        <path id="Path_6" d="M12.7505 19.5876C12.7171 19.6083 12.6838 19.6278 12.6505 19.6481C12.6838 19.6278 12.7171 19.6083 12.7505 19.5876Z" fill="black" />
+                        <path id="Path_7" d="M12.5389 19.6429C12.5057 19.6636 12.4723 19.6847 12.4389 19.7046C12.4723 19.6847 12.5057 19.664 12.5389 19.6429Z" fill="black" />
+                        <path id="Path_8" d="M12.2663 19.7111C12.2332 19.7307 12.1998 19.749 12.1663 19.7678C12.1998 19.749 12.2332 19.7307 12.2663 19.7111Z" fill="black" />
+                        <path id="Path_9" d="M10.8198 19.9466C10.7672 19.958 10.7147 19.9681 10.662 19.9771C10.7147 19.9681 10.7672 19.958 10.8198 19.9466Z" fill="black" />
+                        <path id="Path_10" d="M19.961 9.98051C19.961 4.46927 15.4917 0 9.98051 0C4.46927 0 0 4.46927 0 9.98051C0 15.4917 4.46927 19.961 9.98051 19.961C10.0391 19.961 10.0975 19.9598 10.1559 19.9587V12.1893H8.0117V9.69039H10.1559V7.85149C10.1559 5.71881 11.4579 4.55805 13.3603 4.55805C14.2713 4.55805 15.0544 4.62597 15.2827 4.65628V6.8852H13.9708C12.9359 6.8852 12.7354 7.3771 12.7354 8.09881V9.69039H15.2102L14.8876 12.1893H12.7354V19.5754C16.9071 18.3795 19.961 14.5361 19.961 9.98051Z" fill="#BBFF74" />
+                        <path id="Path_11" d="M10.64 19.9571C10.5361 19.9743 10.4318 19.9879 10.3271 19.9969C10.4318 19.9879 10.5361 19.9743 10.64 19.9571Z" fill="black" />
+                        <path id="Path_12" d="M10.3218 19.982C10.2667 19.9867 10.2114 19.9902 10.1561 19.9925C10.2114 19.9902 10.2667 19.9867 10.3218 19.982Z" fill="black" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="003-youtube">
+                        <path id="Path" d="M8.75439 11.8734L12.0073 9.99994L8.75439 8.12646L8.75439 11.8734Z" fill="#BBFF74" />
+                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.478 4.478 0 10 0C15.522 0 20 4.478 20 10C20 15.522 15.522 20 10 20C4.478 20 0 15.522 0 10ZM15.9912 13.0162C16.2485 12.0383 16.2485 10.0102 16.2485 10.0102C16.2485 10.0102 16.2589 7.97211 15.9912 6.99417C15.847 6.45889 15.425 6.03668 14.8897 5.89264C13.9117 5.625 10 5.625 10 5.625C10 5.625 6.08826 5.625 5.11032 5.88242C4.58527 6.02646 4.15283 6.45889 4.00879 6.99417C3.75137 7.97211 3.75137 10 3.75137 10C3.75137 10 3.75137 12.0383 4.00879 13.0058C4.15298 13.5411 4.57504 13.9633 5.11032 14.1074C6.09848 14.375 10 14.375 10 14.375C10 14.375 13.9117 14.375 14.8897 14.1176C15.425 13.9735 15.847 13.5515 15.9912 13.0162Z" fill="#BBFF74" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="002-instagram">
+                        <path id="Path" d="M11.9141 10C11.9141 11.0571 11.0571 11.9141 10 11.9141C8.94287 11.9141 8.08594 11.0571 8.08594 10C8.08594 8.94287 8.94287 8.08594 10 8.08594C11.0571 8.08594 11.9141 8.94287 11.9141 10Z" fill="#BBFF74" />
+                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M14.4763 6.61343C14.3843 6.36411 14.2375 6.13843 14.0468 5.95319C13.8615 5.76245 13.636 5.61566 13.3865 5.52365C13.1842 5.44507 12.8802 5.35153 12.3204 5.32605C11.7148 5.29843 11.5332 5.29248 10 5.29248C8.46664 5.29248 8.28506 5.29828 7.6796 5.3259C7.11975 5.35153 6.81564 5.44507 6.61346 5.52365C6.36398 5.61566 6.13831 5.76245 5.95322 5.95319C5.76248 6.13843 5.61569 6.36395 5.52353 6.61343C5.44495 6.81577 5.35141 7.11987 5.32593 7.67972C5.29831 8.28519 5.29236 8.46677 5.29236 10.0001C5.29236 11.5333 5.29831 11.7149 5.32593 12.3205C5.35141 12.8804 5.44495 13.1843 5.52353 13.3867C5.61569 13.6361 5.76233 13.8617 5.95306 14.0469C6.13831 14.2376 6.36383 14.3844 6.61331 14.4764C6.81564 14.5552 7.11975 14.6487 7.6796 14.6742C8.28506 14.7018 8.46649 14.7076 9.99985 14.7076C11.5334 14.7076 11.7149 14.7018 12.3203 14.6742C12.8801 14.6487 13.1842 14.5552 13.3865 14.4764C13.8873 14.2833 14.2831 13.8875 14.4763 13.3867C14.5549 13.1843 14.6484 12.8804 14.6741 12.3205C14.7017 11.7149 14.7075 11.5333 14.7075 10.0001C14.7075 8.46677 14.7017 8.28519 14.6741 7.67972C14.6486 7.11987 14.5551 6.81577 14.4763 6.61343ZM10 12.9486C8.37143 12.9486 7.05124 11.6285 7.05124 9.99997C7.05124 8.3714 8.37143 7.05136 10 7.05136C11.6284 7.05136 12.9486 8.3714 12.9486 9.99997C12.9486 11.6285 11.6284 12.9486 10 12.9486ZM12.3761 6.93478C12.3761 7.31534 12.6846 7.62387 13.0652 7.62387C13.4457 7.62387 13.7541 7.31534 13.7543 6.93478C13.7543 6.55423 13.4457 6.2457 13.0652 6.2457C12.6846 6.2457 12.3761 6.55423 12.3761 6.93478Z" fill="#BBFF74" />
+                        <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.478 4.478 0 10 0C15.522 0 20 4.478 20 10C20 15.522 15.522 20 10 20C4.478 20 0 15.522 0 10ZM15.4407 13.7613C15.5826 13.396 15.6798 12.9787 15.7076 12.3674C15.7356 11.7551 15.7422 11.5594 15.7422 10C15.7422 8.44055 15.7356 8.24493 15.7077 7.6326C15.6798 7.02133 15.5827 6.604 15.4407 6.23871C15.2966 5.85556 15.0705 5.50858 14.7784 5.22171C14.4916 4.9295 14.1444 4.70337 13.7613 4.55917C13.396 4.41742 12.9787 4.32037 12.3674 4.2926C11.7551 4.26453 11.5594 4.25781 10 4.25781C8.44055 4.25781 8.24493 4.26453 7.6326 4.29245C7.02133 4.32037 6.604 4.41742 6.23871 4.55933C5.85556 4.70352 5.50842 4.9295 5.22171 5.22171C4.9295 5.50842 4.70337 5.85556 4.55917 6.23871C4.41727 6.604 4.32022 7.02133 4.29245 7.6326C4.26437 8.24493 4.25781 8.44055 4.25781 10C4.25781 11.5594 4.26437 11.7551 4.2926 12.3676C4.32037 12.9787 4.41757 13.3961 4.55948 13.7613C4.70367 14.1444 4.92966 14.4916 5.22171 14.7783C5.50858 15.0705 5.85556 15.2965 6.23886 15.4407C6.604 15.5826 7.02148 15.6796 7.6326 15.7076C8.24509 15.7355 8.44055 15.7422 10.0002 15.7422C11.5596 15.7422 11.7552 15.7355 12.3676 15.7076C12.9787 15.6796 13.3961 15.5826 13.7613 15.4407C14.5326 15.1424 15.1424 14.5326 15.4407 13.7613Z" fill="#BBFF74" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
