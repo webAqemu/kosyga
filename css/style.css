@@ -327,6 +327,7 @@ body {
 
 .stats {
   background-image: url(../img/stats-bg.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   padding: 42px 0 120px 0;
