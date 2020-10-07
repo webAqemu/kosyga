@@ -3,6 +3,18 @@
 @import 'fonts';
 
 
+#layer {
+  position: absolute;
+  width: 100%;
+  &.active {
+    background-color: #000000;
+    opacity: .65;
+    z-index: 100;
+    top: 180px;
+    bottom: 0;
+  }
+}
+
 .btn {
   display: inline-block;
   @include b4;
@@ -118,7 +130,7 @@
 
   &__bottom {
     @include b4;
-    border-bottom: 1px solid #979797;
+    border-bottom: 1px solid #D8D8D8;
   }
 
   &__wrapper {
@@ -212,9 +224,6 @@
     text-decoration: none;
     &--blue {
       color: #52ABFF;
-    }
-    &:hover {
-      text-decoration: underline;
     }
   }
 
@@ -408,7 +417,7 @@
 }
 
 .directions {
-  padding: 66px 0 122px 43px;
+  padding: 66px 0 172px 0px;
   background-color: #1B3AAD;
   color: #fff;
   position: relative;
@@ -610,8 +619,9 @@
 
 .about {
   color: #1B1B1B;
-  margin-top: 73px;
-  margin-bottom: 121px;
+  padding-top: 73px;
+  padding-bottom: 121px;
+  background-color: #FCFCFC;
 
   &__inner {
     display: flex;
@@ -668,7 +678,9 @@
 }
 
 .clubs {
-  margin-bottom: 147px;
+  padding-bottom: 85px;
+  margin-bottom: 62px;
+  background-color: #FCFCFC;
   position: relative;
   
   &::after {
@@ -676,9 +688,9 @@
     position: absolute;
     top: 111px;
     right: 0;
-    height: 460px;
+    height: 600px;
     width: 149px;
-    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0.0001) 99.8%);
+    background: linear-gradient(90deg, rgba(254, 254, 254, 0.0001) 0%, #FCFCFC 100%);
     z-index: 9999;
   }
     
@@ -956,13 +968,20 @@
     padding: 69px 94px 60px 0px;
     max-width: 400px;
     width: 100%;
-    border-right: 1px solid #979797;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   &__logo {
-    display: inline-block;
+    width: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 77px;
   }
+
+  &__img + &__img {
+    margin-top: 5px;
+}
 
   &__paragraph {
     font-size: 10px;
@@ -985,7 +1004,7 @@
       position: absolute;
       width: 20000px;
       height: 1px;
-      background-color: #979797;
+      background-color:rgba(255, 255, 255, 0.1);
       left: 0;
       bottom: 0;
     }
@@ -1045,11 +1064,11 @@
   }
 
   &__social {
-    height: 189px;
+    height: 157px;
     padding-left: 73px;
     padding-top: 34px;
     padding-bottom: 60px;
-    border-left: 1px solid #979797;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   &__social-list {

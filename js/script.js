@@ -14,10 +14,10 @@
 // const sliderSection = document.querySelector(".slider");
 
 $("#header__item").mouseover(function () {
-  $("#slider").addClass("active")
+  $("#layer").addClass("active")
 });
 $("#header__item").mouseout(function () {
-  $("#slider").removeClass("active")
+  $("#layer").removeClass("active")
 });
 
 const $status = $('.slider__number');
